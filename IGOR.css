@@ -1,0 +1,24 @@
+body {
+    background-color: #eea4bb;
+}
+
+#Igortext{
+    max-width: 30%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 50px;
+}
+
+.szoveg{
+    height: 200px;
+    font-size: 20px;
+}
