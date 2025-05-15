@@ -1,34 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IGOR</title>
-    <link rel="icon" type="image/x-icon" href="IGOR.icon">
-    <link rel="stylesheet" href="IGOR.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IGOR</title>
+  <link rel="stylesheet" href="IGOR.css"/>
+  <link rel="icon" href="IGOR.icon">
 </head>
 <body>
-    
-    <header>
-        <img id="Igortext" src="IgorTextheader.png" alt="IgorText">
-    </header>
-
+  <header>
     <div class="container">
-
-        <div>
-            <img src="IgorVinyl.png" alt="IgorVinyl">
-        </div>
-
-        <div class="szoveg"> 
-            <p>Az Igor (stilizálva: IGOR) Tyler, the Creator amerikai rapper és producer hatodik stúdióalbuma, amely 2019. május 17-én jelent meg a Columbia Records kiadón keresztül. <br>
-            A lemez egyetlen producer Tyler volt, közreműködött rajta Playboi Carti, Lil Uzi Vert, Solange, Kanye West és Jerrod Carmichael.</p>
-        </div>
-
-        <div class="szoveg">
-            <p>Tyler, The Creator 2020-ban megnyerte a legjobb rap albumért járó Grammy-díjat az IGOR című lemezével, amely merész zenei kísérletezésével és egyedi hangzásvilágával vívta ki a szakma elismerését. <br>
-            A győzelem mérföldkő volt karrierjében, és új szintre emelte az alternatív hiphop megítélését. </p>
-        </div>
-
+      <img src="IgorTextheader.png" alt="IGOR Album Borító" id="IgorTextheader">
+      <h2>Tyler, The Creator 6. stúdió albuma</h2>
+      <nav>
+        <ul>
+          <li><a href="#albumrol">Az album</a></li>
+          <li><a href="#hallgatas">Hallgatás</a></li>
+          <li><a href="#grammy">Grammy</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <main class="container">
+    <section id="albumrol">
+      <h3>Az albumról...</h3>
+      <div class="img-text">
+        <img src="TylerPortrait.png" alt="Tyler, The Creator portré" class="kepek-oldalt">
+        <p>
+          Az <strong>IGOR</strong> Tyler, The Creator 2019-es albuma, amely egyedi hangzásvilággal és érzelmi mélységgel hódította meg a világot. Az album történetmesélése a szerelem és a veszteség fájdalmas útján vezet végig, miközben Tyler teljes művészi kontroll alatt hozta létre a zenéket, hangokat és vizuális világot.
+        </p>
+      </div>
+    </section>
+
+    <section id="hallgatas">
+      <h3>Hallgasd meg ezeken a platformokon!!!</h3>
+      <div id="IgorDiv">
+        <a href="https://en.wikipedia.org/wiki/Igor_%28album%29" target="_blank"><img src="IgorViny.png" alt="IgorVinyl" id="IgorVinyl" ></a>
+      </div>
+      <div class="zene-grid">
+        <a class="zene-rublika spotify" href="https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE" target="_blank">
+          <img src="SpotifyLogo.png" alt="Spotify Logo">
+          <span>Spotify</span>
+        </a>
+        <a class="zene-rublika apple" href="https://music.apple.com/us/album/igor/1463409338" target="_blank">
+          <img src="AppleMusicLogo.png" alt="Apple Music Logo">
+          <span>Apple Music</span>
+        </a>
+        <a class="zene-rublika youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_lpv17dzKsIp6huLYAxQEYFw3vK8Wsd1FQ" target="_blank">
+          <img src="YoutubeMusicLogo.png" alt="YouTube Logo">
+          <span>YouTube</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="grammy">
+      <h3>Grammy Díj</h3>
+      <div class="img-text">
+        <img src="IgorGrammy.png" alt="Tyler a Grammy-díjjal" class="kepek-oldalt">
+        <p>
+          Az IGOR 2020-ban elnyerte a <strong>Legjobb Rap Album</strong> díját a 62. Grammy-díjátadón. Ez hatalmas mérföldkő volt Tyler karrierjében, ugyanakkor kritikával illette a beskatulyázott zenei kategóriákat. Az IGOR több, mint rap: egy zseniálisan megalkotott műfajközi mestermű.
+        </p>
+      </div>
+    </section>
+
+    <section>
+        <h3>Grammy Díj Videó</h3>
+         <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/OdRB1pwDRwA"
+            title="Tyler Grammy Győzelem"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <a href="index.html" id="vissza">Vissza a főoldalra</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IGOR Weboldal - Készítette: Pimbor Dániel</p>
+  </footer>
+
 </body>
 </html>

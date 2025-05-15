@@ -1,0 +1,18 @@
+body{
+    background-color: #F8F0D2;;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+#CMIYGLText{
+    align-self: middle;
+    width: 40%;
+}
+
+#HeaderText{
+    display: flex;
+    justify-content: center;
+}
