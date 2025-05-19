@@ -16,3 +16,17 @@ body{
     display: flex;
     justify-content: center;
 }
+
+h3{
+    font-family: 'Libre Franklin', sans-serif;;
+    color: RGB(68,45,9);
+    font-size: 50px;
+    text-align: center;
+}
+
+.libre-franklin-cmiyglfont {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
