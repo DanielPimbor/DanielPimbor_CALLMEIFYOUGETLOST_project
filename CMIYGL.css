@@ -7,6 +7,8 @@ body{
     display: block;
 }
 
+/* === header === */
+
 #CMIYGLText{
     align-self: middle;
     width: 40%;
@@ -24,9 +26,156 @@ h3{
     text-align: center;
 }
 
+h2{
+    font-family: 'Libre Franklin', sans-serif;;
+    color: RGB(68,45,9);
+    font-size: 30px;
+    text-align: center;
+}
+
+/* === font === */
+
 .libre-franklin-cmiyglfont {
     font-family: "Libre Franklin", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
+}
+
+/* === navigacios cuccok === */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  font-family: 'Libre Franklin', sans-serif;;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: RGB(68,45,9);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+nav ul li a:hover {
+  border-color: RGB(68,45,9);
+}
+
+/* === cover === */
+
+#albumcover{
+    display: flex;
+    justify-content: center;
+}
+
+#CMIYGLCover{
+    height: 300px;
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+}
+
+#CMIYGLCover:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* === hallgatas === */
+
+#hallgatas{
+    margin-top: 80px;
+}
+
+.zene-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.zene-rublika {
+  font-family: 'Libre Franklin', sans-serif;;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: RGB(68,45,9);
+  transition: transform 0.4s ease;
+}
+
+.zene-rublika:hover {
+  transform: scale(1.08);
+}
+
+.zene-rublika img {
+  width: 40px;
+}
+
+/* === tracklist === */
+
+ol{
+    color: RGB(68,45,9);
+    font-family: 'Libre Franklin', sans-serif;;
+    list-style-position: inside; /* optional: makes numbers align with text */
+    padding: 0;
+    margin: 0 auto; /* centers the ol element itself */
+    width: fit-content;
+    font-size: 22px;
+}
+
+li{
+    margin: 20px 0;
+}
+
+ol.colored-markers {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ol.colored-markers li {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 10px;
+  }
+
+
+  ol.colored-markers li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  ol.colored-markers li:nth-child(4n+1)::before {
+    background-image: url('csillagok/kek.png');
+  }
+
+  ol.colored-markers li:nth-child(4n+2)::before {
+    background-image: url('csillagok/sarga.png');
+  }
+
+  ol.colored-markers li:nth-child(4n+3)::before {
+    background-image: url('csillagok/zold.png');
+  }
+  
+  ol.colored-markers li:nth-child(4n+4)::before {
+    background-image: url('csillagok/rozsaszin.png');
   }
