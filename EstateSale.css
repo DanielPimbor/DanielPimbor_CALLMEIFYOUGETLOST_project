@@ -1,5 +1,5 @@
 body{
-    background-color: #F8F0D2;;
+    background-color:RGB(68,45,9);
     width: 100%;
     height: 100%;
     padding: 0px;
@@ -16,9 +16,11 @@ body{
 
 /* === header === */
 
-#CMIYGLText{
+#EstateSaleText{
     align-self: middle;
-    width: 40%;
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 #HeaderText{
@@ -28,16 +30,19 @@ body{
 
 h3{
     font-family: 'Libre Franklin', sans-serif;;
-    color: RGB(68,45,9);
+    color:  #F8F0D2;;
     font-size: 50px;
     text-align: center;
+    text-shadow: 0 4px 8px rgb(0, 0, 0);;
 }
 
-h2{
+#bevezeto{
     font-family: 'Libre Franklin', sans-serif;;
-    color: RGB(68,45,9);
-    font-size: 30px;
+    color:  #F8F0D2;;
+    font-size: 20px;
     text-align: center;
+    text-shadow: 0 4px 8px rgb(0, 0, 0);;
+    margin-top: 50px;
 }
 
 /* === font === */
@@ -58,6 +63,8 @@ nav ul {
   flex-wrap: wrap;
   margin-top: 1rem;
   font-family: 'Libre Franklin', sans-serif;;
+  font-size: 20px;
+  text-shadow: 0 4px 8px rgb(0, 0, 0);;
 }
 
 nav ul li {
@@ -66,7 +73,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: RGB(68,45,9);
+  color: #F8F0D2;;
   font-weight: bold;
   padding: 5px 10px;
   border-bottom: 2px solid transparent;
@@ -74,7 +81,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-color: RGB(68,45,9);
+  border-color: #F8F0D2;;
 }
 
 /* === cover === */
@@ -88,11 +95,12 @@ nav ul li a:hover {
     height: 300px;
     transition: transform 0.4s ease;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.673);
 }
 
 #CMIYGLCover:hover{
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.673);
 }
 
 /* === hallgatas === */
@@ -120,10 +128,12 @@ nav ul li a:hover {
   text-decoration: none;
   color: RGB(68,45,9);
   transition: transform 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.673);
 }
 
 .zene-rublika:hover {
   transform: scale(1.08);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.673);
 }
 
 .zene-rublika img {
@@ -133,13 +143,14 @@ nav ul li a:hover {
 /* === tracklist === */
 
 ol{
-    color: RGB(68,45,9);
+    color: #F8F0D2;;
     font-family: 'Libre Franklin', sans-serif;;
     list-style-position: inside; 
     padding: 0;
     margin: 0 auto; 
     width: fit-content;
     font-size: 22px;
+    text-shadow: 0 4px 8px rgb(0, 0, 0);;
 }
 
 li{
@@ -187,37 +198,23 @@ ol.colored-markers {
     background-image: url('csillagok/rozsaszin.png');
   }
 
-  /* === tracklist === */
+  /* === kepek === */
 
-  #lefleur{
-    font-family: 'Libre Franklin', sans-serif;;
-    color: RGB(68,45,9);
-    font-size: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  #lefleurlogo{
-    align-self: middle;
+ .kepek{
     width: 40%;
-    margin-top: -60px;
-    margin-bottom: -100px;
+    justify-content: center;
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.673);
+    display: flex;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
-
-.lefleurkepek {
-  width: 250px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #333;
-  transition: transform 0.3s ease;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 20px;
-  margin-bottom: 60px;
-}
-
-.lefleurkepek:hover{
-    transform: scale(1.05);
+  .kepek:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.673);
 }
 
   /* === lelső rész === */
@@ -227,8 +224,16 @@ footer {
   text-align: center;
   padding: 3px;
   font-size: 0.9rem;
-  color: RGB(68,45,9);
+  color: #F8F0D2;;
+  margin-bottom: 10px;
+}
 
+#video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* === vissza a főoldalra === */
@@ -237,15 +242,14 @@ footer {
     font-family: 'Libre Franklin', sans-serif;;
     font-size: 20px;
     text-decoration: none;
-    color: RGB(68,45,9);
-    font-weight: bold;
+    color: #F8F0D2;;    
     padding: 5px 10px;
     border-bottom: 2px solid transparent;
     transition: all 0.3s;
     margin-bottom: 80px;
-    margin-top: 80px;
+    margin-top: 200px;
 }
 
 #vissza:hover {
-  border-color: RGB(68,45,9);
+  border-color: #F8F0D2;;
 }
